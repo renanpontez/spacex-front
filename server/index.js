@@ -4,10 +4,6 @@ const app = express();
 const publicPath = path.join(__dirname, '..', 'build');
 const port = process.env.PORT || 3000;
 
-const ReactGA = require('react-ga');
-const trackingId = 'G-G4GDE3LRWZ';
-ReactGA.initialize(trackingId);
-
 app.use(express.static(publicPath));
 
 app.get('*', (req, res) => {
