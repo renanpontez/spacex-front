@@ -18,7 +18,7 @@ const MissionInfo = ({ missionData, isRecent }) => {
         <img
           src={missionData.links.patch.small}
           alt=""
-          className="overflow-hidden h-36 rounded-md"
+          className="overflow-hidden h-36"
         />
       </div>
       <div className="col-span-2">
@@ -35,7 +35,7 @@ const MissionInfo = ({ missionData, isRecent }) => {
             onClick={handleReadMoreClick}
             target={'_blank'}
             href={missionData.links.reddit.campaign}
-            className="hover:bg-gray-700 rounded-full py-2 px-3 font-semibold hover:text-white bg-gray-400 text-gray-100"
+            className="hover:bg-gray-700 py-2 px-3 font-semibold hover:text-white bg-gray-400 text-gray-100"
           >
             Read More
           </a>

@@ -16,7 +16,7 @@ const Home = () => {
             style={{
               backgroundImage: `url(https://www.spacex.com/static/images/crew-2/docking/Homepage_Dragon_Docking_Desktop.webp)`,
             }}
-            className="mt-4 h-96 bg-cover bg-center pt-24 pl-12 text-white rounded-lg mb-16"
+            className="md:mt-4 h-96 bg-cover bg-center pt-24 pl-12 text-white mb-16"
           >
             <div className="w-80">
               <h1 className="font-bold">SpaceX - Launches Info! =)</h1>
@@ -26,7 +26,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-flow-col grid-cols-2 gap-6 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             <div>
               {data.latest && (
                 <CardInfo title={'Latest Mission'} missionData={data.latest} />
@@ -38,7 +38,7 @@ const Home = () => {
               )}
             </div>
           </div>
-          <div className="grid grid-flow-col grid-cols-2 gap-6 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 px-4">
             <div>
               <AccordionList title={'Past Missions'} missionsData={data.past} />
             </div>
