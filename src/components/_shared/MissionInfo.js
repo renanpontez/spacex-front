@@ -5,9 +5,10 @@ const MissionInfo = ({ missionData, isRecent }) => {
   const handleReadMoreClick = () => {
     if (isRecent) {
       ReactGA.event({
-        category: 'Mission',
+        category: 'Links',
         action: 'Read More Mission',
         label: 'Clicked Read More',
+        value: 1,
       });
     }
   };
