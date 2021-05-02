@@ -1,5 +1,6 @@
 {
-  "name": "next-launc-frontend",
+  "name": "next-launch-frontend",
+  "homepage": "https://spacexnextlaunch-front.herokuapp.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
