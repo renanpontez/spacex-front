@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactGA from 'react-ga';
 ReactGA.initialize(process.env.REACT_APP_GA_TRACKING);
 
@@ -22,7 +22,7 @@ const MissionInfo = ({ missionData, isRecent }) => {
       <div>
         <img
           src={missionData.links.patch.small}
-          alt=""
+          alt={missionData.name}
           className="overflow-hidden h-36"
         />
       </div>
