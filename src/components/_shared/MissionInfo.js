@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactGA from 'react-ga';
+ReactGA.initialize(process.env.REACT_APP_GA_TRACKING);
 
 const MissionInfo = ({ missionData, isRecent }) => {
   const handleReadMoreClick = () => {
     if (isRecent) {
+      ReactGA.initialize(process.env.REACT_APP_GA_TRACKING);
+      ReactGA.pageview(window.location.pathname);
+
       ReactGA.event({
         category: 'Links',
         action: 'Read More Mission',
