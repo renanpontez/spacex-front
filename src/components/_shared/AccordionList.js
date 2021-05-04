@@ -14,15 +14,14 @@ const AccordionList = ({ title, missionsData }) => {
 
       <section className="shadow">
         {Object.values(missionsData).map(eachMission => (
-          <article
-            className="border-b"
-            key={eachMission.id}
-            onClick={() => handleAccordion(eachMission.id)}
-          >
+          <article className="border-b" key={eachMission.id}>
             <div className="border-l-2 border-transparent ">
-              <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none rounded-full">
+              <header className="flex justify-between items-center p-5 pl-8 pr-8select-none rounded-full">
                 <h2 className="">{eachMission.name}</h2>
-                <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center">
+                <div
+                  className="rounded-full border border-grey w-7 h-7 flex items-center justify-center cursor-pointer "
+                  onClick={() => handleAccordion(eachMission.id)}
+                >
                   <p className="ml-1 transform rotate-90 text-center">
                     {missionOpened === eachMission.id ? '<' : '>'}
                   </p>
