@@ -38,7 +38,7 @@ const Home = () => {
                 class="w-12 h-12 m-3 rounded-full bg-blue-500 inline-flex p-2 shadow"
               >
                 <svg
-                  className={`w-7 h-12 mb-2 ml-1 text-center fill-current text-white`}
+                  className={`w-7 h-12 mt-1 mb-2 ml-1 text-center fill-current text-white`}
                   xmlns="http://www.w3.org/2000/svg"
                   version="1.1"
                 >
